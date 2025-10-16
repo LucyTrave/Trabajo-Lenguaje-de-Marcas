@@ -1,0 +1,212 @@
+ <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurante Los Mellizos</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>   
+    <body>
+        <header>
+            <img class="logo" src="imagenes/logo.jpg" alt="">
+            <h1>Restaurante (Chill-Out) LOS MELLIZOS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#productos-servicios">Productos y Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#trabaja-con-nosotros">Trabaja con nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section id="inicio">
+                <h2>Restaurante (Chill-Out) "Los Mellizos"</h2>
+                <p>Tradición y vanguardia</p>
+                <p>Las tendencias más innovadoras se dan cita en <em> Restaurante Los Mellizos</em> , que refleja el espíritu atrevido y joven de la marca, pero sin perder la esencia: un trato personalizado y la mejor cocina.
+                El profundo respeto al producto de calidad y la elaboración propia al más puro estilo andaluz son los ingredientes básicos de <em>Los Mellizos</em>, que apuesta por cocinar experiencias en la que intervengan
+                todos los sentidos. Por eso, cuida cada detalle de la atención al cliente y crea estilo en decoración e interiorismo.</p>
+                <img src="imagenes/chill-out.jpg" alt="Imagen de inicio" width="550" height="550">
+            </section>
+            
+            <section id="quienes-somos">
+                <h2>Quiénes Somos</h2>
+                <h3>¿EN QUÉ PODEMOS AYUDARTE?</h3>
+                <p> Ubicado en una de las principales áreas turisticas de Málaga, ofrece también una amplia terraza al aire libre donde degustar su amplia carta.
+                En pleno ‘corazón’ de Nerja nace en 2015 la esencia de Los Mellizos.Desde entonces, ha puesto a disposición de la ciudad la auténtica gastronomía andaluza y mediterránea,
+                en un ambiente acogedor, cálido y familiar.La ampliación de nuevos salones y espacios ha permitido, además, crear un estilo propio pero igual de confortable.</p>
+                <p> Si eres <strong> celiaco </strong>, comer sigue siendo un placer.
+                     En nuestros salones también disponemos de una selección de platos libre de gluten. Consulta nuestra carta sin gluten y la disponibilidad. </p> 
+
+                    <br>
+                    <div class="fotos-video-container">
+                        <img src="imagenes/Personal1.jpeg" alt="personas">
+                        <img src="imagenes/cocina.jpg" alt="Cocina">
+                        <img src="imagenes/salon.jpg" alt="Salón">    
+                        <video controls>
+                            <source src="imagenes/videocopas.mp4" type="video/mp4">
+                        </video>
+                    </div>
+            </section>
+            
+            <section id="productos-servicios">
+                <h2>Productos y Servicios</h2>
+                 <!-- Tabla descriptiva de servicios -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Descripción</th>
+                                <th>Precio Aproximado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Catering</td>
+                                <td>Servicio personalizado para eventos de hasta 200 personas</td>
+                                <td>Desde 500€</td>
+                            </tr>
+                            <tr>
+                                <td>Menú degustación</td>
+                                <td>Experiencia gastronómica con cocina local e internacional</td>
+                                <td>Menús desde 30€ por persona</td>
+                            </tr>
+                            <tr>
+                                <td>Organización de eventos</td>
+                                <td>Planificación completa para eventos corporativos y privados</td>
+                                <td>Consultar precio </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+            
+            <section id="contacto">
+                <h2>¿DÓNDE ESTAMOS?</h2>
+                <p><b>LOS MELLIZOS</b><br>
+                Playa El Playazo<br>
+                Urbanización Marinas de Nerja <br>
+                29780 Nerja (Málaga)<br>
+                Tlf: 687766777<br>
+                Email: contacto@losmellizos.com</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.080713362432!2d-3.8998360163572494!3d36.744633665084194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd722536eba53bfd%3A0x66dead5e2042d5df!2sPlaya%20Playazo%20Rio%20Seco!5e0!3m2!1ses!2ses!4v1740540861706!5m2!1ses!2ses"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </section>   
+             <section>
+                <h3>FORMULARIO DE CONTACTO </h3>
+                <p>Para cualquier sugerencia utilice el formulario de contacto:</p>
+            
+                <form action="http://localhost/proceso.php" method="post">
+                    <h2>Contacto</h2>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" name="email" required>
+                    <label for="telefono1">Teléfono:</label>
+                    <input type="tel" id="telefono1" name="telefono">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>    
+            
+ 
+            <section id="trabaja-con-nosotros">
+                <h2>Trabaja con nosotr@s</h2>
+                <p><em>Las oportunidades no son producto de la casualidad, más bién son RESULTADOS DE UN BUEN TRABAJO</em></p>
+                <form id="formulario-trabajo">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre1" name="nombre" required>                       
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos">                      
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni">                      
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>                       
+                        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">                       
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad">    
+                        <label for="nacionalidad">Nacionalidad:</label>
+                        <input type="text" id="nacionalidad" name="nacionalidad">
+                        <label for="codigo-postal">Código Postal:</label>
+                        <input type="text" id="codigo-postal" name="codigo-postal">  
+                        <label for="telefono1">Teléfono:</label>
+                        <input type="tel" id="telefono2" name="telefono">   
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" name="email">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Formación</legend>
+                        <label for="titulacion">Titulación:</label>
+                        <input type="text" id="titulacion" name="titulacion">
+                        
+                        <label>Año de inicio:</label>
+                        <input type="date" id="Inicio" name="Inicio">
+                        
+                        <label for="fin">Año de finalización:</label>
+                        <input type="date" id="fin" name="fin">
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend>Idiomas</legend>
+                        <label for="idioma">Idioma:</label>
+                        <input type="text" id="idioma" name="idioma">
+                        
+                    <label for="hablado">Hablado:</label>
+                        <select id="hablado" name="hablado">
+                            <option value="excelente">Excelente</option>
+                            <option value="bien">Bien</option>
+                            <option value="regular">Regular</option>
+                            <option value="nada">Nada</option>
+                        </select>
+                        
+                    <label for="leido">Leído:</label>
+                        <select id="leido" name="leido">
+                            <option value="excelente">Excelente</option>
+                            <option value="bien">Bien</option>
+                            <option value="regular">Regular</option>
+                            <option value="nada">Nada</option>
+                        </select>
+                        
+                    <label for="escrito">Escrito:</label>
+                        <select id="escrito" name="escrito">
+                            <option value="excelente">Excelente</option>
+                            <option value="bien">Bien</option>
+                            <option value="regular">Regular</option>
+                            <option value="nada">Nada</option>
+                        </select>
+                    </fieldset>   
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+        <h2>Horario de apertura:</h2>
+        <ul> 
+            <li>Mañana de lunes a jueves: de 12:00 a 16:00 horas </li>
+            <li>Tardes de lunes a jueves: de 20: a 23:00 horas</li>
+            <li>Viernes, sábados y domingos de 12:00 a 02:00 horas</li>
+        </ul>
+        </footer>
+    
+            <a href="https://iso25000.com/index.php/politica-cookies">Política de Cookies</a>
+            <p>Síguenos en redes sociales:</p>
+            <a href="https://www.facebook.com"><img src="imagenes/facebook.png" alt="Facebook" width="100" height="100"></a>
+            <a href="https://www.twitter.com"><img src="imagenes/twitter.png" alt="Twitter" width="100" height="100"></a>
+            <a href="https://www.instagram.com"><img src="imagenes/instagram.png" alt="Instagram" width="100" height="100"></a>
+        
+    </body>
+</html>
+    

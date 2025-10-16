@@ -1,0 +1,261 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/foto\ 2.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    color: #eee4e4; /* Color del texto */
+}
+
+
+
+/* Encabezado */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mejorar la lectura */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Imágenes dentro de las secciones */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.fotos {
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra las imágenes en la fila */
+    gap: 10px; /* Espacio entre imágenes */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.fotos img {
+    width: 350px; /* Tamaño uniforme para las imágenes */
+    height: 350px;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+
+
+.logo {
+    display: block; /* Asegura que la imagen no esté en línea con otros elementos */
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 450px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.fotos-video-container {
+    display: flex; /* Activa el modelo flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre imágenes y video */
+    align-items: center; /* Alinea verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+}
+
+.fotos-video-container img {
+    width: 350px; /* Tamaño uniforme */
+    height: 350px;
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.fotos-video-container video {
+    width: 350px; /* Mismo ancho que las imágenes */
+    height: 350px;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+/* Estilo general para todas las secciones */
+section {
+    color: white; /* Texto en blanco para mayor contraste */
+    padding: 50px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    background-size: cover; /* Ajustar imagen al tamaño de la sección */
+    background-position: center; /* Centrar imagen */
+    background-attachment: fixed; /* Efecto parallax */
+    position: relative;
+}
+
+/* Fondo para cada sección */
+#inicio {
+    background-image: url("imagenes/fondo-inicio.jpg");
+}
+
+#quienes-somos {
+    background-image: url("imagenes/fondo-quienes-somos.jpeg");
+}
+
+#productos-servicios {
+    background-image: url("imagenes/fondo-productos-servicios.jpeg");
+}
+
+#contacto {
+    background-image: url("imagenes/fondo-quienes-somos.jpeg");
+}
+
+#trabaja-con-nosotros {
+    background-image: url("imagenes/fondo-trabaja.jpg");
+}
+
+/* Agregar un fondo oscuro semitransparente para mejorar la legibilidad del texto */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece un poco el fondo */
+    z-index: 1;
+}
+
+/* Asegurar que el contenido esté por encima del filtro oscuro */
+section * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centra la tabla */
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    background: rgba(215, 215, 215 0.9); /* Fondo semitransparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los bordes redondeados se vean mal */
+}
+
+/* Encabezado de la tabla */
+thead {
+    background: #9c9eac; 
+    color: rgb(14, 13, 13);
+    text-align: left;
+}
+
+/* Estilos para las celdas */
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #faf1f1; /* Línea separadora */
+}
+
+/* Efecto hover en las filas */
+tbody tr:hover {
+    background: #0a0a0a;
+    transition: 0.3s;
+}
+
+
+/* Estilos generales para el formulario */
+form {
+    max-width: 500px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px;
+    background: rgba(215, 215,215, 0.9); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos para etiquetas */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para los campos de entrada */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón */
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #4400ff; 
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #00a3cc; /* Color más oscuro al pasar el mouse */
+}
+
+/* Aumentar el tamaño del texto del título */
+div {
+    font-size: 28px; /* Tamaño más grande */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Aumentar el tamaño de la lista */
+ul {
+    font-size: 30px; /* Tamaño de letra más grande */
+    text-align: center; /* Centrar lista */
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0; /* Quitar espacio adicional */
+    
+
+}
+
+
